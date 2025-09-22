@@ -1,0 +1,367 @@
+[
+  {
+    "lat": -34.5281205,
+    "lng": -58.473816,
+    "nombre": "Vicente Lopez, Buenos Aires"
+  },
+  {
+    "lat": -34.606188,
+    "lng": -58.3628543,
+    "nombre": "Juana Manso 740, Buenos Aires"
+  },
+  {
+    "lat": -34.6096173,
+    "lng": -58.4548978,
+    "nombre": "Paysandu 1264, Buenos Aires"
+  },
+  {
+    "lat": -34.5480059,
+    "lng": -58.44694390000001,
+    "nombre": "Universidad Torcuato Di Tella, Buenos Aires"
+  },
+  {
+    "lat": -34.635406,
+    "lng": -58.5206968,
+    "nombre": "Estadio Jose Amalfitani, Buenos Aires"
+  },
+  {
+    "lat": -34.597085,
+    "lng": -58.3940649,
+    "nombre": "Escuela Superior de Comercio Carlos Pellegrini, CABA"
+  },
+  {
+    "lat": -34.6137676,
+    "lng": -58.43443329999999,
+    "nombre": "Campichuelo 272, CABA"
+  },
+  {
+    "lat": -34.5826299,
+    "lng": -58.39197959999999,
+    "nombre": "Facultad de Derecho, CABA"
+  },
+  {
+    "lat": -34.5964787,
+    "lng": -58.3783779,
+    "nombre": "Fa Song Song, CABA"
+  },
+  {
+    "lat": -34.5782197,
+    "lng": -58.40554880000001,
+    "nombre": "Colegio Bayard, CABA"
+  },
+  {
+    "lat": -34.6376952,
+    "lng": -58.5228943,
+    "nombre": "Barragan 222, CABA"
+  },
+  {
+    "lat": -34.6185589,
+    "lng": -58.3725069,
+    "nombre": "Mercado de San Telmo, CABA"
+  },
+  {
+    "lat": -34.6063371,
+    "lng": -58.47316679999999,
+    "nombre": "Estadio Diego Armando Maradona, CABA"
+  },
+  {
+    "lat": -34.6037389,
+    "lng": -58.3815704,
+    "nombre": "Obelisco, CABA"
+  },
+  {
+    "lat": -34.5530116,
+    "lng": -58.4984864,
+    "nombre": "Parque Sarmiento, CABA"
+  },
+  {
+    "lat": -34.5913693,
+    "lng": -58.3981248,
+    "nombre": "Azcuenaga 1500, CABA"
+  },
+  {
+    "lat": -34.5751476,
+    "lng": -58.4355772,
+    "nombre": "Estacion Ministro Carranza, CABA"
+  },
+  {
+    "lat": -34.5688622,
+    "lng": -58.4259923,
+    "nombre": "Hipodromo de Bs As, CABA"
+  },
+  {
+    "lat": -34.6240995,
+    "lng": -58.35974179999999,
+    "nombre": "Casino de Buenos Aires, CABA"
+  },
+  {
+    "lat": -34.61732600000001,
+    "lng": -58.36152439999999,
+    "nombre": "Puerto de Buenos Aires, CABA"
+  },
+  {
+    "lat": -34.5487572,
+    "lng": -58.4375081,
+    "nombre": "Estacion Scalabrini Ortiz, CABA"
+  },
+  {
+    "lat": -34.6356109,
+    "lng": -58.36475629999999,
+    "nombre": "La Bombonera, Buenos Aires"
+  },
+  {
+    "lat": -34.5877675,
+    "lng": -58.4563446,
+    "nombre": "Cementerio Chacarita, Buenos Aires"
+  },
+  {
+    "lat": -34.5749591,
+    "lng": -58.4956375,
+    "nombre": "Nahuel Huapi y Cerreti, Buenos Aires"
+  },
+  {
+    "lat": -34.5652597,
+    "lng": -58.4753444,
+    "nombre": "Estacion Coghlan, Buenos Aires"
+  },
+  {
+    "lat": -34.6046959,
+    "lng": -58.44809309999999,
+    "nombre": "Restaurante Don Zoilo, Buenos Aires"
+  },
+  {
+    "lat": -34.5960595,
+    "lng": -58.48266839999999,
+    "nombre": "Facultad de Agronomia, Buenos Aires"
+  },
+  {
+    "lat": -34.6340618,
+    "lng": -58.43288159999999,
+    "nombre": "Parque Chacabuco, CABA"
+  },
+  {
+    "lat": -34.6219632,
+    "lng": -58.49763979999999,
+    "nombre": "Club All Boys, Floresta, CABA"
+  },
+  {
+    "lat": -34.6139827,
+    "lng": -58.5251013,
+    "nombre": "Avenida Lope de Vega y Av. Beiró, Devoto, CABA"
+  },
+  {
+    "lat": -34.6216436,
+    "lng": -58.4917498,
+    "nombre": "Polideportivo Pomar, Villa del Parque, CABA"
+  },
+  {
+    "lat": -34.5969779,
+    "lng": -58.490104,
+    "nombre": "Club Comunicaciones, Agronomía, CABA"
+  },
+  {
+    "lat": -34.5812341,
+    "lng": -58.47426989999999,
+    "nombre": "Avenida Triunvirato y Av. de los Incas, Villa Urquiza, CABA"
+  },
+  {
+    "lat": -34.6360755,
+    "lng": -58.5009531,
+    "nombre": "Estación Villa Luro, CABA"
+  },
+  {
+    "lat": -34.5996941,
+    "lng": -58.5122224,
+    "nombre": "Plaza Arenales, Villa Devoto, CABA"
+  },
+  {
+    "lat": -34.6366499,
+    "lng": -58.4458633,
+    "nombre": "Av. Asamblea y Av. Curapaligüe, Parque Chacabuco, CABA"
+  },
+  {
+    "lat": -34.6195047,
+    "lng": -58.4462119,
+    "nombre": "Club Ferro Carril Oeste, Caballito, CABA"
+  },
+  {
+    "lat": -34.5830141,
+    "lng": -58.37737559999999,
+    "nombre": "Barrio 31, Retiro, CABA"
+  },
+  {
+    "lat": -34.6146622,
+    "lng": -58.4578676,
+    "nombre": "Plaza Irlanda, Caballito Norte, CABA"
+  },
+  {
+    "lat": -34.589567,
+    "lng": -58.5182799,
+    "nombre": "Avenida San Martín y General Paz, Villa Devoto, CABA"
+  },
+  {
+    "lat": -34.5912111,
+    "lng": -58.37497209999999,
+    "nombre": "Estación Retiro Mitre, CABA"
+  },
+  {
+    "lat": -34.5948017,
+    "lng": -58.4442525,
+    "nombre": "Avenida Juan B. Justo y Av. Corrientes, Villa Crespo, CABA"
+  },
+  {
+    "lat": -34.5464971,
+    "lng": -58.4504537,
+    "nombre": "Estadio Monumental, Núñez, CABA"
+  },
+  {
+    "lat": -34.5781295,
+    "lng": -58.4267017,
+    "nombre": "Avenida Santa Fe y Juan B. Justo, Palermo, CABA"
+  },
+  {
+    "lat": -34.6282493,
+    "lng": -58.38049090000001,
+    "nombre": "Estación Constitución, CABA"
+  },
+  {
+    "lat": -34.5585893,
+    "lng": -58.4494088,
+    "nombre": "Estación Belgrano C, CABA"
+  },
+  {
+    "lat": -34.58117010000001,
+    "lng": -58.420869,
+    "nombre": "Plaza Italia, Palermo, CABA"
+  },
+  {
+    "lat": -34.5696763,
+    "lng": -58.4116258,
+    "nombre": "Planetario Galileo Galilei, Palermo, CABA"
+  },
+  {
+    "lat": -34.6079815,
+    "lng": -58.3651374,
+    "nombre": "Puente de la Mujer, Puerto Madero, CABA"
+  },
+  {
+    "lat": -34.61719480000001,
+    "lng": -58.3716715,
+    "nombre": "Calle Defensa y Avenida Independencia, San Telmo, CABA"
+  },
+  {
+    "lat": -34.658765,
+    "lng": -58.4727536,
+    "nombre": "Barrio Cildañez, Villa Lugano, CABA"
+  },
+  {
+    "lat": -34.5867653,
+    "lng": -58.45544930000001,
+    "nombre": "Estación Federico Lacroze, Chacarita, CABA"
+  },
+  {
+    "lat": -34.5806439,
+    "lng": -58.44561150000001,
+    "nombre": "Plaza Mafalda, Colegiales, CABA"
+  },
+  {
+    "lat": -34.5505269,
+    "lng": -58.4530773,
+    "nombre": "Avenida del Libertador y Congreso, Belgrano, CABA"
+  },
+  {
+    "lat": -34.5805067,
+    "lng": -58.4509532,
+    "nombre": "Avenida Alvarez Thomas y Lacroze, Colegiales, CABA"
+  },
+  {
+    "lat": -34.597015,
+    "lng": -58.4930429,
+    "nombre": "Avenida Nazca y Av. San Martín, Villa Pueyrredón, CABA"
+  },
+  {
+    "lat": -34.6057909,
+    "lng": -58.4190914,
+    "nombre": "Plaza Almagro, CABA"
+  },
+  {
+    "lat": -34.5544079,
+    "lng": -58.4867447,
+    "nombre": "Estación Saavedra, CABA"
+  },
+  {
+    "lat": -34.5652597,
+    "lng": -58.4753444,
+    "nombre": "Estación Coghlan, CABA"
+  },
+  {
+    "lat": -34.5785944,
+    "lng": -58.4696036,
+    "nombre": "Estación Villa Ortúzar, CABA"
+  },
+  {
+    "lat": -34.5865056,
+    "lng": -58.3916768,
+    "nombre": "Centro Cultural Recoleta, CABA"
+  },
+  {
+    "lat": -34.6220479,
+    "lng": -58.3705415,
+    "nombre": "Museo de Arte Moderno de Buenos Aires, San Telmo, CABA"
+  },
+  {
+    "lat": -34.6285618,
+    "lng": -58.3569582,
+    "nombre": "Usina del Arte, La Boca, CABA"
+  },
+  {
+    "lat": -34.6396016,
+    "lng": -58.3618687,
+    "nombre": "Fundación PROA, La Boca, CABA"
+  },
+  {
+    "lat": -34.571983,
+    "lng": -58.4893093,
+    "nombre": "Plaza Echeverría, Villa Urquiza, CABA"
+  },
+  {
+    "lat": -34.6265523,
+    "lng": -58.369556,
+    "nombre": "Parque Lezama, San Telmo, CABA"
+  },
+  {
+    "lat": -34.626996,
+    "lng": -58.3705892,
+    "nombre": "Museo Histórico Nacional, San Telmo, CABA"
+  },
+  {
+    "lat": -34.5601288,
+    "lng": -58.4305336,
+    "nombre": "Lago de Regatas, Palermo, CABA"
+  },
+  {
+    "lat": -34.6536,
+    "lng": -58.43226779999999,
+    "nombre": "Barrio Charrúa, Nueva Pompeya, CABA"
+  },
+  {
+    "lat": -34.6204718,
+    "lng": -58.4414022,
+    "nombre": "Calle Rojas y Av. Rivadavia, Caballito, CABA"
+  },
+  {
+    "lat": -34.6591635,
+    "lng": -58.4166605,
+    "nombre": "Puente Alsina, Nueva Pompeya, CABA"
+  },
+  {
+    "lat": -34.6181066,
+    "lng": -58.4974873,
+    "nombre": "Plaza Monte Castro, CABA"
+  },
+  {
+    "lat": -34.6051122,
+    "lng": -58.4933882,
+    "nombre": "Plaza Aristóbulo del Valle, Villa del Parque, CABA"
+  }
+]

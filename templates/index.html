@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bonanza - Ruteo de Vehículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .footer {
+            padding: 20px 10px;
+            background: #f1f1f1;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #4da3ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        /* Fondo oscuro */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Caja blanca */
+        .modal-contenido {
+            background: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Botón cerrar (X) */
+        .cerrar {
+            color: #aaa;
+            float: right;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+
+        <img src="{{ url_for('static', filename='imagenes/logo_grande.png') }}" alt="Logo Bonanza"
+            style="width: 160px; height: 160px; border-radius: 12px;">
+
+        <h1>Bonanza</h1>
+        <h2>Optimización e inteligencia artificial.</h2>
+        <h2>Ruteo de vehículos con restricciones horarias y de capacidad.</h2>
+
+        <!-- Botón para abrir la ventana -->
+        <button onclick="abrirModal()">ℹ Cómo usar esta herramienta</button>
+
+        <!-- Ventana modal -->
+        <div id="modalInstrucciones" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <h3>Cómo usar esta herramienta</h3>
+                <ul>
+                    <li><strong>Cantidad de vehículos:</strong> número de camiones o utilitarios disponibles.</li><br>
+                    <li><strong>Capacidad por vehículo:</strong> máxima cantidad de paquetes que puede transportar.</li>
+                    <br>
+                    <li><strong>Velocidad promedio:</strong> usada para calcular los tiempos de viaje.</li><br>
+                    <li><strong>Direcciones:</strong> cada fila de la tabla es un lugar a visitar.
+                        <ul>
+                            <li><strong>Dirección:</strong> calle y número o referencia clara. <br>Para más precisión, agrega el nombre de la ciudad a cada dirección.</li>
+                            <li><strong>Hora Apertura:</strong> hora mínima de llegada.</li>
+                            <li><strong>Hora Cierre:</strong> hora máxima de llegada.</li>
+                            <li><strong>Paquetes:</strong> cantidad de paquetes a entregar o retirar.</li>
+                            
+                        </ul>
+                    </li><br>
+
+                    <li><strong>Depósito:</strong> la primera dirección siempre será el depósito. El camion va a salir y
+                        va a terminar su viaje en el deposito.</li><br>
+                    <li>Podés <strong>agregar o borrar direcciones</strong> con los botones.</li><br>
+                    <li>Finalmente, hacé clic en <strong>“Calcular rutas”</strong> para obtener la planificación.</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <form method="POST" action="/resultado">
+            <label for="q_vehiculos">Cantidad de vehículos:</label>
+            <input type="number" id="q_vehiculos" name="q_vehiculos" value="1" min="1"><br><br>
+
+            <label for="capacidad">Capacidad por vehículo:</label>
+            <input type="number" id="capacidad" name="capacidad" value="10" min="1"><br><br>
+
+            <label for="velocidad">Velocidad (km/h):</label>
+            <input type="number" id="velocidad" name="velocidad" value="60" min="1"><br><br>
+
+            <table id="tablaDirecciones">
+                <thead>
+                    <tr>
+                        <th>Dirección</th>
+                        <th>Hora Apertura (0-24)</th>
+                        <th>Hora Cierre (0-24)</th>
+                        <th>Paquetes</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="direccion[]" placeholder="Ej: Av. Santa Fe 1234, CABA"></td>
+                        <td><input type="number" name="inicio[]" min="0" max="24" value="8"></td>
+                        <td><input type="number" name="fin[]" min="0" max="24" value="17"></td>
+                        <td><input type="number" name="carga[]" min="0" value="1"></td>
+                        <td><button type="button" onclick="borrarFila(this)">❌</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="button" onclick="agregarFila()">Agregar dirección</button><br><br>
+            <button type="submit">Calcular rutas</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por <strong>Bonanza</strong></p>
+        <p>Sitio web: <a href="http://www.bonanzasol.com.ar" target="_blank">www.bonanzasol.com.ar</a></p>
+        <p>Correo: <a href="mailto:info@bonanzasol.com.ar">info@bonanzasol.com.ar</a></p>
+    </footer>
+
+    <script>
+        function abrirModal() {
+            document.getElementById("modalInstrucciones").style.display = "block";
+        }
+
+        function cerrarModal() {
+            document.getElementById("modalInstrucciones").style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById("modalInstrucciones");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function agregarFila() {
+            const tabla = document.getElementById("tablaDirecciones").getElementsByTagName('tbody')[0];
+            const filas = tabla.getElementsByTagName("tr").length;
+
+            if (filas >= 25) {
+                alert("⚠️ Solo se permiten hasta 25 direcciones. Si necesitas más, escribinos a info@bonanzasol.com.ar");
+                return;
+            }
+
+            const fila = tabla.insertRow();
+            fila.innerHTML = `
+                <td><input type="text" name="direccion[]" placeholder="Ej: Av. Santa Fe 1234, CABA"></td>
+                <td><input type="number" name="inicio[]" min="0" max="24" value="8"></td>
+                <td><input type="number" name="fin[]" min="0" max="24" value="17"></td>
+                <td><input type="number" name="carga[]" min="0" value="1"></td>
+                <td><button type="button" onclick="borrarFila(this)">❌</button></td>
+            `;
+        }
+
+        function borrarFila(btn) {
+            const fila = btn.parentNode.parentNode;
+            fila.parentNode.removeChild(fila);
+        }
+    </script>
+</body>
+
+</html>
