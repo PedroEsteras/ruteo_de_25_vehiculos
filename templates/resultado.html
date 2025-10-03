@@ -31,16 +31,24 @@
 
         <h2>Detalle de rutas:</h2>
         <ul>
-            {% for camino in rutas %}
-            <li><b>Vehículo {{ loop.index }}:</b>
-                <ol>
-                    {% for idx in camino %}
-                    <li>{{ puntos[idx].nombre }}</li>
-                    {% endfor %}
-                </ol>
+        {% for camion in resultados %}
+            <li><b>{{ camion.camion }}:</b>
+                <ul>
+                {% for recorrido in camion.recorridos %}
+                    <li>
+                        <b><p>Horario salida: {{ recorrido.salida }} &nbsp;&nbsp; Horario llegada: {{ recorrido.llegada }}</p></b>
+                        <ol>
+                        {% for idx in recorrido.camino %}
+                            <li>{{ puntos[idx].nombre }}</li>
+                        {% endfor %}
+                        </ol>
+                    </li>
+                {% endfor %}
+                </ul>
             </li>
-            {% endfor %}
+        {% endfor %}
         </ul>
+
     </main>
 
     <footer class="footer">

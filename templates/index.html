@@ -156,6 +156,27 @@
             <label for="velocidad">Velocidad (km/h):</label>
             <input type="number" id="velocidad" name="velocidad" value="60" min="1"><br><br>
 
+
+            <h3>Depósito</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dirección</th>
+                        <th>Hora Apertura (0-24)</th>
+                        <th>Hora Cierre (0-24)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="deposito_direccion" placeholder="Ej: Av. Belgrano 1000, CABA"></td>
+                        <td><input type="number" name="deposito_inicio" min="0" max="24" value="0"></td>
+                        <td><input type="number" name="deposito_fin" min="0" max="24" value="24"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Direcciones a visitar</h3>
+
             <table id="tablaDirecciones">
                 <thead>
                     <tr>
